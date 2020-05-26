@@ -1,0 +1,47 @@
+<div class="container">
+  <div class="row d-flex justify-content-center h-100">
+    <div class="col-md-8 my-auto">
+      <form action="/product/create-new-product" method="POST" autocomplete="off" style="background:#e6dcdc12; border: 1px dotted #121212; padding: 10px; border-radius: 10px;">
+        <h3 class="text-center"><strong>Create / Update a Product</strong></h3>
+        <fieldset class="form-group">
+          <input type="hidden" class="form-control" id="_id" name="" value="">
+        </fieldset>
+        <div class="form-row">
+          <fieldset class="form-group col-md-6">
+            <label for="title"><strong>Title *</strong></label>
+            <input type="text" class="form-control" id="title" name="title" value="{{ product.title }}" placeholder="type your title">
+            <div class="text-danger">{{ product.titleError }}</div>
+          </fieldset>
+          <fieldset class="form-group col-md-6">
+            <label for="price"><strong>Price *</strong></label>
+            <input type="number" class="form-control" id="price" name="price" value="{{ product.price }}">
+            <div class="text-danger">{{ product.priceError }}</div>
+          </fieldset>
+        </div>
+        <fieldset class="form-group">
+          <label for="image"><strong>Image *</strong></label>
+          <input type="file" class="form-control" id="image" name="image">
+        </fieldset>
+        <fieldset class="form-group">
+          <label for="description"><strong>Description *</strong></label>
+          <textarea class="form-control" id="description" rows="3" name="description" value="{{ product.description }}"></textarea>
+          <div class="text-danger">{{ product.descriptionError }}</div>
+        </fieldset>
+        <div class="form-row">
+          <fieldset class="form-group col-md-6">
+            <label for="supplier"><strong>Supplier *</strong></label>
+            <input type="text" class="form-control" id="supplier" name="supplier" value="{{ product.supplier }}">
+            <div class="text-danger">{{ product.supplierError }}</div>
+          </fieldset>
+          <fieldset class="form-group col-md-6">
+            <label for="phone"><strong>Phone *</strong></label>
+            <input type="number" class="form-control" id="phone" name="phone" value="{{ product.phone }}">
+            <div class="text-danger">{{ product.phoneError }}</div>
+          </fieldset>
+        </div>
+        <button type="submit" class="btn btn-primary">Save Product</button>
+      </form>
+    </div>
+  </div>
+</div>
+

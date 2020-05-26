@@ -1,0 +1,51 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-3" id="sidebar-style">
+      <div id="sidebar">
+        <ul>
+          <li><a href="/user/user-list">Staff Members</a></li>
+          <li><a href="/user/create-user">Create new Member</a></li>
+          <li><a href="/product/create-product">Create new Product</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-9">
+      <div style="margin: 50px auto 0 auto;">
+        <div style="display: inline-block;">
+          <h2 style="float: right; margin-left: 200px;">Product Details</h2>
+        </div>
+        <br>
+        <br>
+
+        <table class="table table-bordered" id="pdt-table">
+          <thead>
+            <tr>
+              <th>No</th>
+              <th>Title</th>
+              <th>Price</th>
+              <th>Supplier</th>
+              <th>Phone</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+              <td>07XXXXXXXXXX</td>
+              <td id="pdt-btn-list">
+                <a href="/product/product-detail" class="btn btn-info btn-md"><i class="fa fa-envelope"></i></a>
+                <a href="/product/create-product" class="btn btn-warning btn-md"><i class="fa fa-edit"></i></a>
+                <a href="#" class="btn btn-danger btn-md"><i class="fa fa-trash"></i></a>
+            </td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+    </div>
+  </div>
+</div>
+
